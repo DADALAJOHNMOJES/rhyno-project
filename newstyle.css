@@ -1,0 +1,770 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ...................................Home Page............................................. */
+/* navigation bar */
+
+
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #F9ED32  20%, #EDEDED 100%);
+    padding: 15px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+.nav-left img{
+    height: 60px;
+}
+.nav-center {
+    color:#131313;
+}
+.nav-center a{
+  color: #131313;
+}
+.nav-center a::after{
+  content:'';
+  width:0%;
+  height: 2px;
+  background: #131313;
+  display:block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-center a:hover::after{
+  width:100%;
+}
+.nav-right img{
+  height: 30px;
+}
+div {background-color: none;}
+div a {
+  text-decoration: none;
+  color: #EDEDED;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background:linear-gradient(to bottom, #F9ED32 20%, #EDEDED 100%);}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 130px;
+  display: none;
+  border: #131313;
+}
+ul li ul li { 
+  background: linear-gradient(to bottom, #F9ED32 20%, #EDEDED 100%);
+  display: block; 
+  font-size: 10px;
+  height: 50px;
+  padding:0%;
+  border:2px solid #EDEDED;
+  border-radius: 10px;
+ margin: 0;
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #EDEDED;}
+/* header banner */
+.header{
+    font-family: lato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height:85vh;
+    color:#131313;
+    background: linear-gradient(to top, #F9ED32  20%, #EDEDED 100%);
+}
+.header img{
+  height: 700px;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 3s;
+  z-index:0;
+}
+@keyframes example1 {
+  from {left: 150vb;}
+  to {left: 0vb; }
+} 
+.header h1{
+  position: relative;
+  animation-name: example2;
+  animation-duration: 3s;
+}
+@keyframes example2 {
+  from {top: 10vb;}
+  to {top: 0vb; }
+}
+/* check out */
+.checkout{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #414141;
+}
+.pro2{
+  margin-left:-180px;
+}
+.pro1 div{
+  margin-left:-90px;
+}
+.pro1 img{
+  height:300px
+}
+.pro2 div{
+  margin-left: 105px;
+}
+.threebuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entirecheckout{
+  background-color: #414141;
+}
+/* pre book button */
+.trailbutton{
+  text-align: right;
+  position: -webkit-sticky; 
+  position: sticky;
+  right: 300px;
+  z-index: 1
+}
+.button{
+  padding: 5px;
+  background-color: #F9ED32;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #131313;
+  border-radius: 20px;
+  position: sticky 30px;
+  align-items:start;
+  max-height: 250px;
+}
+/* footer */
+.footer{
+  margin: 0;
+}
+.privacy
+{
+  color:#EDEDED;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  background-color:#131313 ;
+  text-decoration: none;
+  color:#EDEDED;
+  row-gap: 0px;
+  list-style-type: none;
+}
+.foot{
+  padding: 20px;
+  font-size: 19px;
+}
+.foot a{
+  color:#EDEDED;
+}
+ /*....................................................About us..................................................... */
+ /* navigationbar */
+ .anavigation{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: linear-gradient(to bottom, #EDEDED   20%, #EDEDED 100%);
+  padding: 15px;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.anav-center a{
+  color: #131313;
+}
+.anav-left img{
+  height: 60px;
+}
+.anav-center a::after{
+  content:'';
+  width:0%;
+  height: 2px;
+  background: #131313;
+  display:block;
+  margin: auto;
+  transition: 0.5s;
+}
+.anav-center a:hover::after{
+  width:100%;
+}
+.anav-right img{
+height: 30px;
+}
+div {background-color: none;}
+div a {
+text-decoration: none;
+color: #131313;
+font-size: 20px;
+padding: 15px;
+display:inline-block;
+}
+ul {
+display: inline;
+margin: 0;
+padding: 0;
+}
+ul li {display: inline-block;}
+ul li :hover {background:linear-gradient(to bottom, #EDEDED 20%, #EDEDED 100%);}
+ul li :hover ul {display: block;}
+ul li ul {
+position: absolute;
+width: 130px;
+display: none;
+border: #131313;
+}
+.ab ul li ul li { 
+background: linear-gradient(to bottom, #414141 20%, #EDEDED 100%);
+display: block; 
+font-size: 10px;
+height: 50px;
+padding:0%;
+border:2px solid #EDEDED;
+border-radius: 10px;
+margin: 0;
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #EDEDED;}
+ .ahome{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(to left, #414141  20%, #EDEDED 100%);
+ }
+ /* abot us left side */
+ .aleft{
+  font-size: 25px;
+  text-align: center;
+ }
+ .aheadingleft{
+  color: #131313;
+ }
+ .apara{
+  color: linear-gradient(to top, #414141  20%, #EDEDED 100%);
+ }
+ /* about us right side */
+.aright{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.aheading{
+  color: #EDEDED;
+  text-align: center;
+}
+/* .................................................contact us page..............................................*/
+.cform{
+  border-radius: 5px;
+  background:linear-gradient(to top, #414141 20%, #EDEDED 100%);
+    padding: 20px;
+}
+#chome{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  padding: 40px;
+  background:linear-gradient(to top, #F9ED32 95%, #131313 100%);
+}
+.contact{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+}
+.john{
+  display:flex;
+  flex-direction: row;
+  justify-content:left;
+}
+.location{
+  padding: 100px; 
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #F9ED32;
+  color: #131313;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #F9ED32;
+}
+
+/* .....................................................pre book page .............................................*/
+.rightprebook{
+  text-align:center;
+  background: linear-gradient(to left, #F9ED32 20%, #EDEDED 100%);
+  padding: 20px;
+  
+}
+.container{
+  display:flex;
+  justify-content: center; 
+  align-items:center;
+  min-height: 100vh;
+}
+.row{
+  width:500px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 20px;
+}
+.inputbox{padding: 5px;
+  text-align:left;
+}
+.input{align-items: flex-ends;}
+/* ..................................................product 1 .......................................................*/
+.pronavigation{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: linear-gradient(to left, #F9ED32  20%, #EDEDED 100%);
+  padding: 15px;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.entirepage{
+  background:linear-gradient(to left, #F9ED32  20%, #EDEDED 100%);
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: #131313;
+}
+.pmatterleft{
+  width: 100vb;
+}
+.pmatterleft p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-align: center;
+
+}
+.productentirepage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right:15px;
+  margin-left: 15px;
+}
+/* tables */
+.Table1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.Table1  th {
+  text-align:center;
+  background-color: #EDEDED;
+  font-size: 30px;
+}
+.Table4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.Table4  th {
+  text-align:center;
+  background-color: #EDEDED;
+  font-size: 30px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #414141;
+  color:#EDEDED
+}
+tr:nth-child(odd) {
+  background-color: #EDEDED;
+}
+.pro1button{
+  padding: 15px;
+background-color: #F9ED32;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #131313;
+border-radius: 20px;
+position: sticky 30px;
+}
+/* ..................................................product 4.................................................... */
+.probutton{
+padding: 15px;
+background-color: #414141;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #EDEDED;
+border-radius: 20px;
+position: sticky 30px;
+}
+
+/* ..................................................rentals...................................................... */
+.rentals{
+  font-size: 30px;
+}
+.rimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rentirepage{
+  background: linear-gradient(to top, #414141  10%, #EDEDED 100%) ;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.android{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+.android img{
+  width: 150px;
+}
+/* ..............................home main content slide showscroll.................................. */
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  margin: 0 auto 0 auto;
+  width: 90vw;
+  height: fit-content;
+  border: solid #F3E6FF .5px;
+}
+
+#carousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling:auto; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+  min-width: 400px;
+  min-height:20vh;
+  height: 650px;
+  margin: 15px;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  background:linear-gradient(to right, #FFF225  20%, #EDEDED 100%);
+  border-radius: 7px;
+}
+/* ..............................all product main content slide showscroll.................................. */
+#pcarousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  margin: 0 auto 0 auto;
+  width: 45vw;
+  height: fit-content;
+  border: solid #414141 .5px;
+  border-radius: 10px;
+}
+#pcarousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling:auto; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+.pitem {
+  min-width: 400px;
+  min-height:20vh;
+  height: 250px;
+  margin: 15px;
+  padding: 10px;
+  background-color:none;
+  border-radius: 7px;
+}
+.pitem img{
+  width: 450px;
+}
+.p2item {
+  min-width: 400px;
+  min-height:20vh;
+  height: 250px;
+  margin: 15px;
+  padding: 10px;
+  background-color:none;
+  border-radius: 7px;
+}
+.p2item img{
+  width: 450px;
+  height: 250px;
+}
+
+/* ............................laptop code ends............................. */
+@media screen and (max-width: 600px)
+{
+    .navigation{
+      display:flex;
+      flex-direction: column;
+    }
+    .nav-center a{
+      font-size: 10px;
+      font-weight: bold;
+      display: inline-flex;
+      float: left;
+      column-gap:none ;
+    }
+    .nav-left img{
+      min-width:50px
+    }
+    .header{
+      height: 250px;
+    }
+    .header img{
+      height:200px ;
+    }
+    .header h1{
+      font-size:10px;
+    }
+    .checkheading{
+      font-size: 10px;
+    }
+     .pro1 img{
+      height:250px;
+      margin-left:50px;
+    }
+    .pro2 img{
+      width:430px;
+      margin-left:50px;
+    } 
+    .item{
+      font-size: 15px;
+      height: 500px;
+      margin: 10px;
+    }
+    #carousel{
+      width:100vw;
+    }
+    .item img{
+      height:auto;
+    }
+    .privacy{
+      text-align: center;
+      font-size: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 0px;
+    }
+    .anavigation{
+      display: flex;
+      flex-direction: column;
+    }
+    .ahome{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+    .aheading h1{
+      opacity:0;
+    }
+    .aimg img{
+     width: 400px;
+     margin-left: -50px;
+    }
+    .aheadingleft h1{
+      font-size: 20px;
+    }
+    .apara p{
+      font-size: 15px;
+      width: 98vw;
+      margin-left:-10px;
+    }
+    /* product page is left */
+    .productentirepage{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #pcarousel{
+      text-align: left;
+      margin:0;
+      width: 400px;
+    }
+    .pitem {
+    height: 250px;
+    width: 100px;
+  }
+  .propara p{
+    font-size: 15px;
+    text-align: left;
+    width:348px;
+    margin: 0;
+    margin-right: 2px;
+  } 
+  /*  */
+  .pronavigation{
+    display: flex;
+      flex-direction: column;
+  }
+  /* contact us page */
+    .john{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      column-gap: 0;
+    }
+  /* pre book page */
+  .leftprehome img{
+    display: none;
+  }
+  .prenavcenter a{
+    display: flex;
+    flex-direction:column;
+  }
+  .prebookentirepage{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    display:flex;
+    justify-content:left; 
+    min-height: 0vh;
+  }
+  .col{
+    margin: -13px;
+    font-size: 15px;
+    width:350px;
+  }
+  .rimg img{
+    height: 250px;
+  }
+  .rentals{
+    font-size: 15px;
+    margin:10px;
+  }
+  .Table1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .Table1  th {
+    text-align:center;
+    background-color: #EDEDED;
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .Table4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .Table4  th {
+    text-align:center;
+    background-color: #EDEDED;
+    font-size: 10px;
+  }
+} 
+@media screen and (max-width: 900px) and (min-width: 600px)
+{
+  .header{
+    height: 500px;
+  }
+  .header img{
+    height:370px; 
+  }
+  .header h1{
+    font-size:25px;
+  }
+  .ahome{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+  .aheading h1{
+    opacity:0;
+  }
+  .aimg img{
+   width: 700px;
+   text-align: center;
+  }
+  .aheadingleft h1{
+    font-size: 40px;
+  }
+  .apara p{
+    font-size: 20px;
+    width: 98vw;
+    margin-left:-10px;
+  }
+  .john{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    column-gap: 0;
+  }
+  .checkheading{
+    font-size: 10px;
+  }
+  .privacy{
+    text-align: center;
+    background-color: #131313;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+  }
+  .Table4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .Table4  th {
+    text-align:center;
+    background-color: #EDEDED;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px)
+{
+  .header{
+    height: 500px;
+  }
+  .header img{
+    height:800px; 
+  }
+}
