@@ -90,7 +90,7 @@ ul li ul li:hover {background: #EDEDED;}
     background: linear-gradient(to top, #F9ED32  20%, #EDEDED 100%);
 }
 .header img{
-  height: 700px;
+  height: 475px;
   position: relative;
   animation-name: example1;
   animation-duration: 3s;
@@ -124,7 +124,7 @@ ul li ul li:hover {background: #EDEDED;}
   margin-left:-90px;
 }
 .pro1 img{
-  height:300px
+  height:300px;
 }
 .pro2 div{
   margin-left: 105px;
@@ -269,6 +269,9 @@ ul li ul li:hover {background: #EDEDED;}
   display: flex;
   flex-direction: column;
   justify-content:center;
+}
+.aimg img{
+     height:320px;
 }
 .aheading{
   color: #EDEDED;
@@ -430,6 +433,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: #131313;
 border-radius: 20px;
 position: sticky 30px;
+}
+.cloud img{
+    height: 250px;
 }
 /* ..................................................product 4.................................................... */
 .probutton{
